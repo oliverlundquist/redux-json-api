@@ -1,6 +1,6 @@
 {
   "name": "redux-json-api-without-credentials",
-  "version": "1.6.4",
+  "version": "1.6.2",
   "description": "A bunch of Redux actions, action creators and reducers to integrate with a JSON API",
   "main": "lib/jsonapi.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "redux-thunk": ">=1.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.4.5",
     "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.1",
