@@ -109,7 +109,6 @@ export const createEntity = (resource, {
       apiRequest(endpoint, {
         headers,
         method: 'POST',
-        credentials: 'include',
         body: JSON.stringify({
           data: resource
         })
@@ -145,8 +144,7 @@ export const readEndpoint = (endpoint, {
 
     return new Promise((resolve, reject) => {
       apiRequest(`${apiEndpoint}`, {
-        headers,
-        credentials: 'include'
+        headers
       })
         .then(json => {
           dispatch(apiRead({ endpoint, ...json }));
@@ -183,7 +181,6 @@ export const updateEntity = (resource, {
       apiRequest(endpoint, {
         headers,
         method: 'PATCH',
-        credentials: 'include',
         body: JSON.stringify({
           data: resource
         })
@@ -220,8 +217,7 @@ export const deleteEntity = (resource, {
     return new Promise((resolve, reject) => {
       apiRequest(endpoint, {
         headers,
-        method: 'DELETE',
-        credentials: 'include'
+        method: 'DELETE'
       }).then(() => {
         dispatch(apiDeleted(resource));
         onSuccess();

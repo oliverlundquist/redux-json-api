@@ -1,5 +1,5 @@
 {
-  "name": "redux-json-api",
+  "name": "redux-json-api-without-credentials",
   "version": "1.6.2",
   "description": "A bunch of Redux actions, action creators and reducers to integrate with a JSON API",
   "main": "lib/jsonapi.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dixieio/redux-json-api.git"
+    "url": "git+https://github.com/oliverlundquist/redux-json-api.git"
   },
   "keywords": [
     "redux",
@@ -19,12 +19,12 @@
     "api",
     "jsonapi"
   ],
-  "author": "Ronni Egeriis Persson <ronni@dixie.io>",
+  "author": "Oliver Lundquist <mail@oliverlundquist.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dixieio/redux-json-api/issues"
+    "url": "https://github.com/oliverlundquist/redux-json-api/issues"
   },
-  "homepage": "https://github.com/dixieio/redux-json-api#readme",
+  "homepage": "https://github.com/oliverlundquist/redux-json-api#readme",
   "peerDependencies": {
     "redux-thunk": ">=1.0.0"
   },
